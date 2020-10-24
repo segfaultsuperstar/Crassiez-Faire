@@ -48,7 +48,7 @@ GLUquadricObj *qdr;
  /**Purpose: uses soil for loading and binding textures that make up the scene and skybox*/
 void loadtextures()
 {
-	texobj[0] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/grass64.bmp", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
+	texobj[0] = SOIL_load_OGL_texture("p4textures/grass64.bmp", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
 	if (texobj[0]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for grass***\n");  //Check to see if successfully loaded
@@ -60,7 +60,7 @@ void loadtextures()
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
 	
-	texobj[1] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Gravel.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
+	texobj[1] = SOIL_load_OGL_texture("p4textures/Gravel.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
 	if (texobj[1]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for gravel***\n");  //Check to see if successfully loaded
@@ -72,7 +72,7 @@ void loadtextures()
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	
-	texobj[2] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/LeavesOP.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
+	texobj[2] = SOIL_load_OGL_texture("p4textures/LeavesOP.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
 	if (texobj[2]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for leaves***\n");  //Check to see if successfully loaded
@@ -84,7 +84,7 @@ void loadtextures()
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
 	
-	texobj[3] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Bark.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
+	texobj[3] = SOIL_load_OGL_texture("p4textures/Bark.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y);
 	if (texobj[3]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for bark***\n");  //Check to see if successfully loaded
@@ -96,7 +96,7 @@ void loadtextures()
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
 	glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
 	
-	texobj[4] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Iron.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[4] = SOIL_load_OGL_texture("p4textures/Iron.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[4]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for iron***\n");  //Check to see if successfully loaded
@@ -106,7 +106,7 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-	texobj[5] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Planks.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[5] = SOIL_load_OGL_texture("p4textures/Planks.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[5]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for planks***\n");  //Check to see if successfully loaded
@@ -116,7 +116,7 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-	texobj[6] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/LavaF1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[6] = SOIL_load_OGL_texture("p4textures/LavaF1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[6]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for lava***\n");  //Check to see if successfully loaded
@@ -126,7 +126,7 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	
-	texobj[7] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/GemOv1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[7] = SOIL_load_OGL_texture("p4textures/GemOv1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[7]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for gem***\n");  //Check to see if successfully loaded
@@ -136,7 +136,7 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	
-	texobj[8] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Gold0.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[8] = SOIL_load_OGL_texture("p4textures/Gold0.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[8]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for gold***\n");  //Check to see if successfully loaded
@@ -146,7 +146,7 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	
-	texobj[9] = SOIL_load_OGL_texture("/home/amazingjames/Pictures/p4textures/Gold1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	texobj[9] = SOIL_load_OGL_texture("p4textures/Gold1.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
 	if (texobj[9]==0)
 	{
 		printf("***NO BITMAP RETRIEVED for gold***\n");  //Check to see if successfully loaded
@@ -156,13 +156,13 @@ void loadtextures()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	
-	skybox = SOIL_load_OGL_cubemap("/home/amazingjames/Pictures/p4textures/pos_x.jpg",
-								"/home/amazingjames/Pictures/p4textures/neg_x.jpg",
-								"/home/amazingjames/Pictures/p4textures/pos_y.jpg",
-								"/home/amazingjames/Pictures/p4textures/neg_y.jpg",
-								"/home/amazingjames/Pictures/p4textures/pos_z.jpg",
-								"/home/amazingjames/Pictures/p4textures/neg_z.jpg",SOIL_LOAD_AUTO,0,0);
-	if(skybox == 0)
+	skybox = SOIL_load_OGL_cubemap("p4textures/pos_x.jpg",
+					"p4textures/neg_x.jpg",
+					"p4textures/pos_y.jpg",
+					"p4textures/neg_y.jpg",
+					"p4textures/pos_z.jpg",
+					"p4textures/neg_z.jpg",SOIL_LOAD_AUTO,0,0);
+if(skybox == 0)
 	{
 		puts("loading didnt work");
 		const char *errm = SOIL_last_result();
